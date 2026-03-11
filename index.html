@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="assets/icons/icons8-dia-e-noite-48.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="app-header">
+            <h1>Weather App</h1>
+            <p>Descubra o clima em tempo real</p>
+        </header>
+
+        <!-- Pesquisa -->
+        <div class="search-section">
+            <input type="search" id="cityInput" placeholder="Digite a cidade (Ex: São Paulo)">
+            <button id="searchButton">Pesquisar</button>
+        </div>
+
+        <!-- Clima Atual -->
+        <div id="climaatual" class="weather-card">
+            <img id="weather-icon" src="assets/icons/icons8-dia-e-noite-48.png" alt="ícone do Clima Atual"
+                class="main-icon">
+            <h2 id="temperatura">27°C</h2>
+            <h3 id="city-name">São Paulo</h3>
+            <p id="descricao">Céu limpo</p>
+        </div>
+
+        <!-- Detalhes do Clima -->
+        <div class="detalhes-container">
+            <div class="detalhes-item">
+                <span class="label">Sensação</span>
+                <span class="value" id="sensacao-value">27°C</span>
+            </div>
+            <div class="detalhes-item">
+                <span class="label">Umidade</span>
+                <span class="value" id="umidade-value">60%</span>
+            </div>
+            <div class="detalhes-item">
+                <span class="label">Vento</span>
+                <span class="value" id="vento-value">10 km/h</span>
+            </div>
+        </div>
+
+        <!-- Previsão -->
+        <h3 class="section-title">Previsão da Semana</h3>
+        <div class="forecast-container" id="forecast-container">
+            <!-- Os itens serão gerados aqui pelo JavaScript -->
+        </div>
+
+        <p class="credits">Criado por Matheus Moreira</p>
+    </div>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
